@@ -2,16 +2,17 @@ package org.clm.Dao;
 
 import org.clm.bean.ProductInfo;
 
+import java.util.List;
+
 public interface ProductInfoMapper {
     int deleteByPrimaryKey(String productId);
 
-    int insert(ProductInfo record);
-
     int insertSelective(ProductInfo record);
 
-    ProductInfo selectByPrimaryKey(String productId);
+    List<ProductInfo> selectByKey(ProductInfo productInfo);
+
+    List<ProductInfo> selectByPrimaryKey(ProductInfo productInfo);
 
     int updateByPrimaryKeySelective(ProductInfo record);
 
-    int updateByPrimaryKey(ProductInfo record);
 }

@@ -2,11 +2,16 @@ package org.clm.bean;
 
 import java.util.Date;
 
+
 public class Category {
+    /**类目id*/
+
     private Integer categoryId;
 
+    /**类目名字*/
     private String categoryName;
 
+    /**类目编目*/
     private Integer categoryType;
 
     private Date createTime;
